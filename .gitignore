@@ -1,0 +1,14 @@
+# node dependences, install with npm install
+node_modules/
+# WebStorm settigns
+.idea/
+# Dolphin file
+**/.directory
+app/bower_components
+public/
+.tmp/
+app/styles/**/*.css
+docs/
+app/environmentConfig.js
+app/staticpages/css
+app/staticpages/fonts/glyphicons-halflings-regular.*

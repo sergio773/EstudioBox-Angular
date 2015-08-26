@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html data-ng-app="ESTUDIOBOX" ng-strict-di>
+<head lang="en">
+    <!-- Feed al the crawlers! -->
+    <meta name="fragment" content="!">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui, maximum-scale=1">
+
+    <!-- SEO tags -->
+    <meta name="description" content="description of estudiobox">
+    <link rel="canonical" href="www.estudiobox.es">
+    <!-- END SEO tags -->
+    <!-- OG and twitter tags -->
+    <meta name="twitter:card" content="summary_large_image" >
+    <meta name="twitter:site" content="www.estudiobox.es" >
+    <meta name="twitter:creator" content="@LorcaSergio">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="EstudioBox" >
+    <meta property="og:description" content="description of estudiobox" >
+    <meta property="og:url" content="www.estudiobox.es" >
+    <meta property="og:image" content="/image" >
+    <!-- END OG and twitter tags -->
+    <title ng-bind="'EstudioBox'">EstudioBox</title>
+    <!-- ESTUDIOBOX icon -->
+    <link href="img/icono_126_black.png" rel="apple-touch-icon-precomposed">
+    <link href="img/favicon-08.ico" rel="icon">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <!-- build:css css/vendor.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="bower_components/fontawesome/css/font-awesome.css" />
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css css/estudiobox.css -->
+    <link rel="stylesheet" href="styles/estudiobox.css">
+    <!-- endbuild -->
+</head>
+<body itemscope>
+
+<div>
+    <div data-ui-view="header" class="float-nav" id="main-header"></div>
+    <div data-ui-view="content" id="main-content"></div>
+    <div data-ui-view="footer" id="main-footer"></div>
+</div>
+
+<script> window.prerenderReady = false; </script>
+<!-- build:js js/vendor.js -->
+<!-- bower:js -->
+<script src="bower_components/jquery/dist/jquery.js"></script>
+<script src="bower_components/angular/angular.js"></script>
+<script src="bower_components/angular-animate/angular-animate.js"></script>
+<script src="bower_components/ui-router/release/angular-ui-router.js"></script>
+<script src="bower_components/angular-ui-bootstrap-bower/ui-bootstrap-tpls.js"></script>
+<script src="bower_components/angular-mocks/angular-mocks.js"></script>
+<script src="bower_components/angular-local-storage/dist/angular-local-storage.js"></script>
+<script src="bower_components/jwt-decode/build/jwt-decode.js"></script>
+<script src="bower_components/headroom.js/dist/headroom.js"></script>
+<script src="bower_components/headroom.js/dist/jQuery.headroom.js"></script>
+<script src="bower_components/headroom.js/dist/angular.headroom.js"></script>
+<script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+<script src="bower_components/lodash/lodash.js"></script>
+<script src="bower_components/angular-scroll/angular-scroll.js"></script>
+<!-- endbower -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<!-- endbuild -->
+
+<!-- build:js js/estudiobox.js -->
+<script src="app.js"></script>
+<script src="appRoutes.js"></script>
+<script src="environmentConfig.js"></script>
+<!-- include: "type": "js", "files": "pages/**/*.js" -->
+<script src="pages/home/HomeController.js"></script>
+<!-- /include -->
+<!-- include: "type": "js", "files": "shared/**/*.js" -->
+<script src="shared/header/HeaderController.js"></script>
+<!-- /include -->
+<!-- endbuild -->
+
+<!--app EXTERNAL vendor js-->
+
+<!--app vendor js-->
+
+</body>
+</html>

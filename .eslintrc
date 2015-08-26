@@ -1,0 +1,33 @@
+{
+    "env": {
+        "browser": true,
+        "node": true,
+        "jquery": true,
+        "mocha": true
+    },
+    "rules": {
+        // Possible Errors
+        "no-console": 1,
+        // "valid-jsdoc": 1, // We want to generate good documentation, see JSDoc API for more info
+
+        // Best Practices
+        "consistent-return": 0,
+        "default-case": 2, // We want to have a default case always, and it can't be empty
+        "eqeqeq": 0,
+        "no-eq-null": 2,
+        "no-floating-decimal": 2,
+        "no-script-url": 0,
+        "no-self-compare": 2,
+
+        // Stylistic Issues
+        "camelcase": 1,
+        "comma-style": [2, "last"],
+        "no-lonely-if": 1,
+        "no-multiple-empty-lines": [1, {"max": 2}],
+        "no-nested-ternary": 2,
+        "quotes": 0,
+        "no-undef": 0,
+        "no-use-before-define": 0,
+        "space-before-blocks": 2
+    }
+}
