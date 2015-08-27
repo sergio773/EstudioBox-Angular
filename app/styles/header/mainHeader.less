@@ -10,50 +10,8 @@
     padding-top: 20px;
     animation-duration: 2s !important;
     animation-delay: 0.1s !important;
-    ul {
-        text-align: center;
-        display: inline;
-        margin: 25px;
-        padding: 0;
-        li {
-            display: inline-block;
-            a {
-                color: white;
-                text-decoration: none;
-                margin: .2em 0.5em;
-                transition: ease-in-out 0.3s;
-                &:hover{
-                    cursor: pointer;
-                }
-            }
-            &:nth-child(1) {
-                a:hover{
-                    color: #00ffff;
-                }
-            }
-            &:nth-child(2) {
-                a:hover{
-                    color: magenta;
-                }
-            }
-            &:nth-child(3) {
-                a:hover{
-                    color: yellow;
-                }
-            }
-            &:nth-child(4) {
-                a:hover{
-                    color: red;
-                }
-            }
-            &:nth-child(5) {
-                a:hover{
-                    color: #008000;
-                }
-            }
-        }
-    }
 }
+
 
 .header-home {
     height: 100vh;
@@ -67,4 +25,93 @@
         display: block;
         padding-top: 90px;
     }
+}
+
+.nav-menu {
+    text-align: center;
+    display: inline;
+    margin: 25px;
+    padding: 0;
+    li {
+        display: inline-block;
+        a {
+            color: white;
+            text-decoration: none;
+            margin: .2em 0.5em;
+            transition: ease-in-out 0.3s;
+            &:hover{
+                cursor: pointer;
+            }
+        }
+        &:nth-child(1) {
+            a:hover{
+                color: #00ffff;
+            }
+        }
+        &:nth-child(2) {
+            a:hover{
+                color: magenta;
+            }
+        }
+        &:nth-child(3) {
+            a:hover{
+                color: yellow;
+            }
+        }
+        &:nth-child(4) {
+            a:hover{
+                color: red;
+            }
+        }
+        &:nth-child(5) {
+            a:hover{
+                color: #008000;
+            }
+        }
+    }
+}
+
+.social-icons {
+    float: right;
+    text-align: center;
+    display: inline;
+    margin-right: 25px;
+    padding: 0;
+    li {
+        border-radius: 50%;
+        height: 30px;
+        width: 30px;
+        display: inline-block;
+        background-color: #808080;
+        transition: ease-in-out 0.3s;
+
+        &:hover {
+            animation-name: spin;
+            animation-duration: 1s; /* 3 seconds */
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+            //margin: .2em 0.5em;
+            transition: ease-in-out 0.3s;
+            display: inline;
+            font-size: 20px;
+            &:hover {
+                cursor: pointer;
+            }
+
+            i {
+                vertical-align: top;
+                margin-top: 6px;
+            }
+        }
+    }
+}
+
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
 }
