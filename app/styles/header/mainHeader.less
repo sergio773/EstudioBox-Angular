@@ -1,5 +1,70 @@
-.header-home {
+.header-nav {
     width: 100%;
     height: @navbar-height;
-    background-color:  @navbar-background;
+    background-color: @navbar-background;
+    position: fixed;
+    z-index: 10;
+    font-family: star_avenueregular;
+    font-size: 40px;
+    user-select: none;
+    padding-top: 20px;
+    animation-duration: 2s !important;
+    animation-delay: 0.1s !important;
+    ul {
+        text-align: center;
+        display: inline;
+        margin: 25px;
+        padding: 0;
+        li {
+            display: inline-block;
+            a {
+                color: white;
+                text-decoration: none;
+                margin: .2em 0.5em;
+                transition: ease-in-out 0.3s;
+                &:hover{
+                    cursor: pointer;
+                }
+            }
+            &:nth-child(1) {
+                a:hover{
+                    color: #00ffff;
+                }
+            }
+            &:nth-child(2) {
+                a:hover{
+                    color: magenta;
+                }
+            }
+            &:nth-child(3) {
+                a:hover{
+                    color: yellow;
+                }
+            }
+            &:nth-child(4) {
+                a:hover{
+                    color: red;
+                }
+            }
+            &:nth-child(5) {
+                a:hover{
+                    color: #008000;
+                }
+            }
+        }
+    }
+}
+
+.header-home {
+    height: 100vh;
+    width: 100%;
+    background-image: url("../img/home_bg.jpg");
+    background-size: cover;
+    background-position: center center;
+
+    img {
+        margin: 0 auto;
+        display: block;
+        padding-top: 90px;
+    }
 }
