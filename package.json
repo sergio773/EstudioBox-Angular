@@ -10,6 +10,7 @@
     "grunt-contrib-imagemin": "^0.9.4",
     "grunt-sync": "^0.2.3",
     "http-server": "^0.8.0",
+    "imagemin-jpegtran": "^4.3.0",
     "imagemin-mozjpeg": "^5.1.0",
     "karma": "^0.12.31",
     "karma-chrome-launcher": "^0.1.12",

@@ -1,4 +1,5 @@
 var mozjpeg = require('imagemin-mozjpeg');
+var imageminJpegtran = require('imagemin-jpegtran');
 
 module.exports = function (grunt) {
     "use strict";
@@ -288,7 +289,8 @@ module.exports = function (grunt) {
                 options: {                       // Target options
                     optimizationLevel: 3,
                     svgoPlugins: [{ removeViewBox: false }],
-                    use: [mozjpeg()]
+                    //use: [mozjpeg()]
+                    use: [imageminJpegtran({progressive: true})]
                 },
                 files: [{
                     expand: true,                  // Enable dynamic expansion
