@@ -32,12 +32,28 @@
                 url: '/',
                 views: {
                     'header': {
-                        templateUrl: 'shared/header/HeaderTemplate.html',
+                        templateUrl: 'shared/header/HeaderTemplateHome.html',
                         controller: 'HeaderController as header'
                     },
                     'content': {
                         templateUrl: 'pages/home/HomeTemplate.html',
                         controller: 'HomeController as home'
+                    },
+                    'footer': {
+                        templateUrl: 'shared/footer/Footer.html'
+                    }
+                }
+            })
+            .state('contact', {
+                url: '/contact',
+                views: {
+                    'header': {
+                        templateUrl: 'shared/header/HeaderTemplate.html',
+                        controller: 'HeaderController as header'
+                    },
+                    'content': {
+                        templateUrl: 'pages/contact/ContactTemplate.html',
+                        controller: 'ContactController as contact'
                     },
                     'footer': {
                         templateUrl: 'shared/footer/Footer.html'

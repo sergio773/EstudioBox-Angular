@@ -24,6 +24,10 @@
         margin: 0 auto;
         display: block;
         padding-top: 90px;
+        @media (max-width: 631px) {
+            width: 100%;
+        }
+
     }
 }
 
@@ -72,9 +76,14 @@
 
 
 .btn-default.active.focus, .btn-default.active:focus, .btn-default.active:hover, .btn-default:active.focus, .btn-default:active:focus, .btn-default:active:hover, .open>.dropdown-toggle.btn-default.focus, .open>.dropdown-toggle.btn-default:focus, .open>.dropdown-toggle.btn-default:hover {
-    color: white !important;
+    //color: white !important;
     background-color: transparent !important;
     border-color: transparent !important;
+}
+
+.dropdown-menu {
+    top: 38px !important;
+    left: 6px !important;
 }
 
 .nav-menu {
